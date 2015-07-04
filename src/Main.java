@@ -26,6 +26,7 @@ public class Main {
         System.out.println("Var b = " +Main.b); //Вызов статик переменной
         main1.abc();
 
+
     }
 
     public void abc() {

@@ -28,10 +28,6 @@ public class Main {
 
     }
 
-
-
-
-
     public void abc() {
 
         for (int i =1; i < 8; i +=1){

@@ -30,6 +30,7 @@ public class Main {
         main1.def();
         main1.doWhile();
         main1.privTest();
+        main1.protectedTest();
         main1.switchMetod();
 
 
@@ -91,6 +92,12 @@ public class Main {
     private void privTest() {
 
         System.out.println("Test Private metod. OK");
+
+    }
+
+    protected void protectedTest() {
+
+        System.out.println("Test Protected metod. OK");
 
     }
 

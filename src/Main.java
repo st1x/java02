@@ -25,6 +25,7 @@ public class Main {
         System.out.println("Call var from current class");
         System.out.println("Var b = " +Main.b); //Вызов статик переменной
         main1.abc();
+        main1.def();
 
     }
 
@@ -34,6 +35,21 @@ public class Main {
         for (int i =1; i < 8; i +=1){
             System.out.println(i);
         }
+    }
+
+    public void def() {
+
+        System.out.println("while");
+        int myVar = 0;
+
+        while (myVar < 3){
+            System.out.println("myVar = " +myVar);
+            myVar += 1;
+
+
+        }
+        System.out.println("myVar < 3");
+
     }
 
 }

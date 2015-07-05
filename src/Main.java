@@ -26,6 +26,7 @@ public class Main {
         System.out.println("Var b = " +Main.b); //Вызов статик переменной
         main1.abc();
         main1.def();
+        main1.doWhile();
 
 
     }
@@ -52,5 +53,15 @@ public class Main {
         System.out.println("myVar < 3");
 
     }
+
+    public void doWhile() {
+        int newWar = 0;
+        do {
+            System.out.println("newVar = " +newWar);
+            newWar +=1;
+        } while (newWar < 3);
+        System.out.println("do while is close");
+    }
+
 
 }

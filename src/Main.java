@@ -29,6 +29,7 @@ public class Main {
         main1.abc();
         main1.def();
         main1.doWhile();
+        main1.privTest();
         main1.switchMetod();
 
 
@@ -85,6 +86,12 @@ public class Main {
                 System.out.println("Bad choise");
                 break;
         }
+    }
+
+    private void privTest() {
+
+        System.out.println("Test Private metod. OK");
+
     }
 
 

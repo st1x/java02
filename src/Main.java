@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Created by admin on 02.07.2015.
  */
@@ -27,6 +29,7 @@ public class Main {
         main1.abc();
         main1.def();
         main1.doWhile();
+        main1.switchMetod();
 
 
     }
@@ -61,6 +64,27 @@ public class Main {
             newWar +=1;
         } while (newWar < 3);
         System.out.println("do while is close");
+    }
+
+    public void switchMetod () {
+
+        System.out.println("Please input your choise:");
+        System.out.println("1 - First choise");
+        System.out.println("2 - Second choise");
+        System.out.println("> 1");
+        final Scanner scaner = new Scanner(System.in);
+        int myChoise = scaner.nextInt();
+        switch (myChoise){
+            case 1:
+                System.out.println("Your choise is 1");
+                break;
+            case 2:
+                System.out.println("Your choise is 2");
+                break;
+            default:
+                System.out.println("Bad choise");
+                break;
+        }
     }
 
 

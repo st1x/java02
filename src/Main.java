@@ -25,13 +25,17 @@ public class Main {
         System.out.println("main 2");
         System.out.println(main2.a);
         System.out.println("Call var from current class");
-        System.out.println("Var b = " +Main.b); //Вызов статик переменной
+        System.out.println("Var b = " + Main.b); //Вызов статик переменной
         main1.abc();
         main1.def();
         main1.doWhile();
         main1.privTest();
         main1.protectedTest();
+        Second second = new Second("2");
+        System.out.println(second.getQwe());
         main1.switchMetod();
+
+
 
 
     }
@@ -73,7 +77,7 @@ public class Main {
         System.out.println("Please input your choise:");
         System.out.println("1 - First choise");
         System.out.println("2 - Second choise");
-        System.out.println("> 1");
+        System.out.println("> ");
         final Scanner scaner = new Scanner(System.in);
         int myChoise = scaner.nextInt();
         switch (myChoise){

@@ -35,6 +35,7 @@ public class Main {
         Second second = new Second();
         System.out.println(second.getQwe());
         second = null;
+        //second.
         Second second2 = new Second("New string");
         System.out.println(second2.getQwe());
 

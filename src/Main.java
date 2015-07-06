@@ -31,9 +31,13 @@ public class Main {
         main1.doWhile();
         main1.privTest();
         main1.protectedTest();
-        Second second = new Second("2");
-        System.out.println(second.getQwe());
         main1.switchMetod();
+        Second second = new Second();
+        System.out.println(second.getQwe());
+        second = null;
+        Second second2 = new Second("New string");
+        System.out.println(second2.getQwe());
+
 
 
 
@@ -90,6 +94,7 @@ public class Main {
             default:
                 System.out.println("Bad choise");
                 break;
+
         }
     }
 

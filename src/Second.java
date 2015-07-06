@@ -3,7 +3,11 @@
  */
 public class Second {
 
-    private String qwe = "1";
+    private String qwe = "Print private string";
+
+    public Second() {
+
+    }
 
     public Second(String qwe) {
         this.qwe = qwe;

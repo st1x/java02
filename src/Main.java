@@ -40,7 +40,7 @@ public class Main {
         System.out.println(second2.getQwe());
 
         final Contact contact = new ContactBuilder()
-                .name("Petya")
+                .name("Ivan")
                 .surname("Petrov")
                 .mail("asd@asd.dsa")
                 .address("aaaa 22")
@@ -49,12 +49,14 @@ public class Main {
         System.out.print(contact.getName() +" ");
         System.out.print(contact.getSurname() +" ");
         System.out.print(contact.getAddress() +" ");
-        System.out.print(contact.getMail() +" ");
-        System.out.print(contact.getPhone());
+        System.out.print(contact.getMail() + " ");
+        System.out.println(contact.getPhone());
 
-
-
-
+        System.out.println("Print O from enum:   " +EnumClass.O);
+        System.out.println("Print all enum values:");
+        for (EnumClass f : EnumClass.values()) {
+            System.out.println(f);
+        }
 
     }
 

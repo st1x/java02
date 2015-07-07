@@ -39,6 +39,19 @@ public class Main {
         Second second2 = new Second("New string");
         System.out.println(second2.getQwe());
 
+        final Contact contact = new ContactBuilder()
+                .name("Petya")
+                .surname("Petrov")
+                .mail("asd@asd.dsa")
+                .address("aaaa 22")
+                .phone("1234567")
+                .build();
+        System.out.print(contact.getName() +" ");
+        System.out.print(contact.getSurname() +" ");
+        System.out.print(contact.getAddress() +" ");
+        System.out.print(contact.getMail() +" ");
+        System.out.print(contact.getPhone());
+
 
 
 

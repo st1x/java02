@@ -7,6 +7,8 @@ public class Main {
 
     public int a = 5;
     public static int b = 4;
+    static final String char1 = "abcdef";
+    final String target = " Windows win ";
 
     public static void main(String[] arg) {
 
@@ -57,6 +59,34 @@ public class Main {
         for (EnumClass f : EnumClass.values()) {
             System.out.println(f);
         }
+        //String builder
+        final StringBuilder messageBuilder = new StringBuilder("Messadge: ");
+        messageBuilder.append("text1 ");
+        System.out.println(messageBuilder);
+        final StringBuilder messageBuilder2 = new StringBuilder("Messadge2: ") //Version 2
+        .append("text1 ");
+        System.out.println(messageBuilder2);
+        //char
+        System.out.println();
+        System.out.println(char1);
+        System.out.println(char1.charAt(2));
+        System.out.println(char1.substring(2, 5));
+        System.out.println(char1.substring(1, char1.length()));
+        System.out.println();
+
+        //target
+        System.out.print("Normal string: \"");
+        System.out.println(main1.target + "\"");
+        System.out.println("Metod trim: \"" + main1.target.trim() + "\"");
+        System.out.println("Metod lastIndexOf w : \"" + main1.target.lastIndexOf('w') + "\"");
+        System.out.println("Metod lastIndexOf W : \"" + main1.target.lastIndexOf('W') + "\"");
+        System.out.println("Metod indexOf w : \"" + main1.target.indexOf('w') + "\"");
+        System.out.println("Metod indexOf w, 8 : \"" + main1.target.indexOf('w', 8) + "\"");
+        System.out.println("Metod indexOf win : \"" + main1.target.indexOf("win") + "\"");
+        System.out.println("Metod toLowerCase win : \"" + main1.target.toLowerCase() + "\"");
+        System.out.println("Metod toLowerCase.trim win : \"" + main1.target.toLowerCase().trim() + "\"");
+        System.out.println("Metod toLowerCase.trim.indexOf win : \"" + main1.target.toLowerCase().trim().indexOf("win") + "\"");
+
 
     }
 

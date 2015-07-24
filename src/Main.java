@@ -88,7 +88,6 @@ public class Main {
         System.out.println("Metod toLowerCase.trim.indexOf win : \"" + main1.target.toLowerCase().trim().indexOf("win") + "\"");
 
 
-
     }
 
 

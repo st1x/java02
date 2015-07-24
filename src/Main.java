@@ -9,6 +9,8 @@ public class Main {
     public static int b = 4;
     static final String char1 = "abcdef";
     final String target = " Windows win ";
+    public String floatA = "25";
+    public String floatB = "15";
 
     public static void main(String[] arg) {
 
@@ -66,7 +68,8 @@ public class Main {
         final StringBuilder messageBuilder2 = new StringBuilder("Messadge2: ") //Version 2
         .append("text1 ");
         System.out.println(messageBuilder2);
-        //char
+
+        //char Lesson 6.2
         System.out.println();
         System.out.println(char1);
         System.out.println(char1.charAt(2));
@@ -87,6 +90,54 @@ public class Main {
         System.out.println("Metod toLowerCase.trim win : \"" + main1.target.toLowerCase().trim() + "\"");
         System.out.println("Metod toLowerCase.trim.indexOf win : \"" + main1.target.toLowerCase().trim().indexOf("win") + "\"");
 
+        //Lesson 6.3
+        //Concatenation
+        System.out.println();
+        float a = (Float.valueOf("123")).floatValue();
+        float b = (Float.valueOf("321")).floatValue();
+
+        // do some arithmetic
+        System.out.println("a + b = " +
+                (a + b));
+        System.out.println("a - b = " +
+                (a - b));
+        System.out.println("a * b = " +
+                (a * b));
+        System.out.println("a / b = " +
+                (a / b));
+        System.out.println("a % b = " +
+                (a % b));
+
+        //Lesson 7.1
+
+
+
+    }
+
+
+    //not work :(( cannot call from main
+    public void valueOfDemo(String[] args) {
+
+        if (args.length == 2) {
+            // convert strings to numbers
+            float a = (Float.valueOf(args[0])).floatValue();
+            float b = (Float.valueOf(args[1])).floatValue();
+
+            // do some arithmetic
+            System.out.println("a + b = " +
+                    (a + b));
+            System.out.println("a - b = " +
+                    (a - b));
+            System.out.println("a * b = " +
+                    (a * b));
+            System.out.println("a / b = " +
+                    (a / b));
+            System.out.println("a % b = " +
+                    (a % b));
+        } else {
+            System.out.println("This program " +
+                    "requires two command-line arguments.");
+        }
 
     }
 

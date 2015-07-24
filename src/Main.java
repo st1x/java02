@@ -74,6 +74,7 @@ public class Main {
         System.out.println(char1.substring(1, char1.length()));
         System.out.println();
 
+
         //target
         System.out.print("Normal string: \"");
         System.out.println(main1.target + "\"");

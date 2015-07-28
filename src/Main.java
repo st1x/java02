@@ -50,12 +50,16 @@ public class Main {
                 .address("aaaa 22")
                 .phone("1234567")
                 .build();
+        System.out.print();
         System.out.print(contact.getName() +" ");
         System.out.print(contact.getSurname() +" ");
         System.out.print(contact.getAddress() +" ");
         System.out.print(contact.getMail() + " ");
         System.out.println(contact.getPhone());
+        System.out.print();
 
+
+        //Enum
         System.out.println("Print O from enum:   " +EnumClass.O);
         System.out.println("Print all enum values:");
         for (EnumClass f : EnumClass.values()) {
